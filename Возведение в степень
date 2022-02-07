@@ -1,0 +1,21 @@
+# 2-semestr-1-
+using System;
+
+namespace Calculator
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int a = 5;
+            int n = 3;
+            int f = a;
+            for (int i = 1; i < n; ++i)
+            {
+                f = f * a;
+            }
+            Console.WriteLine(f);
+            Console.ReadKey();
+        }
+    }
+}
