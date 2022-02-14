@@ -6,18 +6,18 @@ namespace projec
     {
         static void Main()
         {
-            int number, degree, result;
+            int Number, Degree, Result;
             Console.WriteLine("Введите число");
-            number = Convert.ToInt32(Console.ReadLine());
+            Number = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Введите степень");
-            degree = Convert.ToInt32(Console.ReadLine());
-            result = number;
-            for (int i = 1; i < degree; ++i)
+            Degree = Convert.ToInt32(Console.ReadLine());
+            Result = Number;
+            for (int i = 1; i < Degree; ++i)
             {
-                result = result * number;
+                Result = Result * Number;
             }
             Console.WriteLine("Ответ");
-            Console.WriteLine(result);
+            Console.WriteLine(Result);
         }
     }
 }
