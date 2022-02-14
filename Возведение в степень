@@ -7,13 +7,16 @@ namespace projec
         static void Main()
         {
             int number, degree, result;
+            Console.WriteLine("Введите число");
             number = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Введите степень");
             degree = Convert.ToInt32(Console.ReadLine());
             result = number;
             for (int i = 1; i < degree; ++i)
             {
                 result = result * number;
             }
+            Console.WriteLine("Ответ");
             Console.WriteLine(result);
         }
     }
