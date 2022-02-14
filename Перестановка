@@ -8,7 +8,7 @@ namespace Calculator
         {
             int FirstNumber = Convert.ToInt32(Console.ReadLine());
             int SecondNumber = FirstNumber;
-            int Temp, Help, Count = 0;
+            int SecondDigit, Help, Count = 0;
             while (SecondNumber / 100 != 0)
             {
                 SecondNumber /= 10;
@@ -16,12 +16,12 @@ namespace Calculator
             }
             Temp = SecondNumber % 10;
             SecondNumber /= 10;
-            for (int consider = 0; consider < Count; ++consider)
+            for (int Consider = 0; Consider < Count; ++Consider)
             {
                 Help = FirstNumber % 10;
                 SecondNumber = int.Parse(SecondNumber.ToString() + Help);
             }
-            SecondNumber = int.Parse(SecondNumber.ToString() + Temp);
+            SecondNumber = int.Parse(SecondNumber.ToString() + SecondDigit);
 
             Console.WriteLine(SecondNumber);
         }
