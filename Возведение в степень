@@ -12,7 +12,7 @@ namespace projec
             Console.WriteLine("Введите степень");
             Degree = Convert.ToInt32(Console.ReadLine());
             Result = Number;
-            for (int i = 1; i < Degree; ++i)
+            for (int IndexDegree = 1; IndexDegree < Degree; ++IndexDegree)
             {
                 Result = Result * Number;
             }
